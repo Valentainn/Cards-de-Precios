@@ -1,0 +1,188 @@
+:root{
+    --color1: #FFBF90;
+    --color2: #f5f5f9;
+    --color3: #FFF;
+    --color4: #373737;
+    --color5: #848199;
+    --color6: #FF8E3C;
+}
+body{
+    background: var(--color2);
+    border: none;
+    font-family: poppins;
+}
+.header h1{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    margin-block-end: 16px;
+    color: var(--color4);
+    text-align: center;
+}
+.header p{
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color5);
+    margin-block-start: 8px;
+}
+.cards-content{
+    display: flex;
+    flex-direction: column;
+}
+.cards-content h2{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color4);
+    margin: 0;
+    margin-inline-end: 5px;
+}
+.cards-content span{
+    color: var(--color5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.cards-content .item-disabled{
+    opacity: 35%;
+}
+.cards-content button{
+    inline-size: 100%;
+    background: rgba(255, 142, 60, 0.10);
+    border: none;
+    border-radius: 90px;
+    padding-inline: 32px;
+    padding-block: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FF8E3C;
+    cursor: pointer;
+    margin-block-start: 16px;
+}
+.cards-content button:active{
+    scale: .8;
+}
+.card-profesional button{
+    background: var(--color4);
+    color: var(--color3);
+}
+.item-content{
+    display: flex;
+}
+.item-content img{
+    height: 20px;
+    width: 20px;
+}
+.item-content p{
+    margin: 0;
+    margin-block-end: 16px;
+    margin-inline-start: 5px;
+}
+.precio{
+    display: flex;
+    margin-block-end: 16px;
+}
+.card-basico{
+    max-inline-size: 292.5px;
+    padding-inline: 20px;
+    padding-block: 25px;
+    background: var(--color3);
+    border-radius: 26px;
+    margin: auto;
+    margin-block-start: 48px;
+}
+.card-intermedio{
+    max-inline-size: 292.5px;
+    padding-inline: 20px;
+    padding-block: 25px;
+    background: var(--color3);
+    border-radius: 26px;
+    margin: auto;
+    margin-block-start: 48px;
+}
+.card-profesional{
+    order: -2;
+    max-inline-size: 292.5px;
+    padding-inline: 20px;
+    padding-block: 25px;
+    background: var(--color6);
+    border-radius: 26px;
+    box-shadow: 0px 42px 34px 0px rgba(82, 67, 194, 0.30);
+    margin: auto;
+    margin-block-start: 48px;
+}
+.card-profesional .popular{
+    background: #FFD5B6;
+    padding-inline: 16px;
+    padding-block: 6px;
+    border-radius: 13.5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    position: relative;
+    inset-inline: 130px;
+}
+.card-profesional span{
+    color: #373737;
+}
+.card-profesional p{
+    color: var(--color4);
+}
+.card-profesional-plus{
+    max-inline-size: 292.5px;
+    padding-inline: 20px;
+    padding-block: 25px;
+    background: var(--color3);
+    border-radius: 26px;
+    margin: auto;
+    margin-block-start: 48px;
+}
+@media screen and (min-width: 1450px){
+    body{
+        background: linear-gradient(75deg,#ff9d57 34.50%, #ff8e7a 82.40%);
+    }
+    .content{
+        max-inline-size: 1170px;
+        background: var(--color2);
+        margin: auto;
+        padding-inline: 90px;
+        padding-block: 70px;
+    }
+    .header h1{
+        font-size: 56px;
+        text-align: start;
+    }
+    .header p{
+        text-align: start;
+    }
+    .cards-content{
+        flex-direction: initial;
+        background: var(--color3);
+        border-radius: 26px;
+        padding: 30px;
+        margin-block-start: 130px;
+    }
+    .card-basico{
+        margin: 0;
+    }
+    .card-intermedio{
+        margin: 0;
+    }
+    .card-profesional{
+        order: 0;
+        position: relative;
+        inset-block: -63px;
+        margin: 0;
+    }
+    .card-profesional-plus{
+        margin: 0;
+    }
+}
